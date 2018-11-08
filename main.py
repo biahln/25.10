@@ -1,15 +1,5 @@
-#Programa principal
+from Janela_Principal import Janela_Principal
 
-#Importação de classes
-from view import View
-from control import Control
-from model import Model
-#Instanciar a View
-m =Model()
-v =View()
-#Instanciar a Control
-c =Control (v,m)
+jnl = Janela_Principal()
 
-v.set_control(c)
-#Exibir o menu
-c.exibir_menu()
+jnl.mainloop()
